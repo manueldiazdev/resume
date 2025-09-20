@@ -1,0 +1,428 @@
+%-------------------------
+% Entry-level Resume in LaTeX
+% Last Edits - July 19, 2021
+% Author : Jayesh Sanwal
+% Reach out to me on LinkedIn(/in/jsanwal), with any suggestions, ideas, etc.
+%------------------------
+
+%%-------------------------------------
+% Author Notes here -
+% 1) Change " Author+an = {N=highlight}" in "Publications.bib", where N is the number at which your name appears
+% 2) Use "\vspace" wisely, that would change spacing, and is currently being used as a hacky fix
+% 3) Do not delete the fonts in the left side
+% 4) Use the "Rich Text" feature on Overleaf - On the top panel next to source. Makes it much easier for starters on LaTeX to use this template
+% 5) Do NOT use periods at the end of bullet points, the sample (ipsum) text might have it
+% 6) Use "maxbibnames" on this file to change the maximum number of authors on the paper (Credits: Dr. Natasha Krell) - Default is 3, but change line 92 to add authors
+
+%%-------------------------------------
+% Changes from last version -
+% 1) Removed areas of Expertise as a separate section - integrated into the summary section
+% 2) Changed Focus to Academic Projects instead of Education
+% 3) Made the integrated summary 3 lines over 1
+% 4) Changed spacing between sections and bullets
+% 5) Changed the number of authors to be user customized
+
+%%-------------------------------------
+% Changes to be made here -
+% 1) Shift to Class file, make changes here
+% 2) Use a fonts folder
+% 3) Incorporate Leadership & volunteering together
+% 4) Remove \vspace based 'hacky' fixes
+%%-------------------------------------
+
+
+\documentclass[a4,10pt]{article}
+
+%%%%%%% --------------------------------------------------------------------------------------
+%%%%%%%  STARTING HERE, DO NOT TOUCH ANYTHING 
+%%%%%%% --------------------------------------------------------------------------------------
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+ \usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{hyperref}
+\usepackage{csquotes}
+\usepackage{tabularx}
+\hypersetup{colorlinks=true,urlcolor=black}
+\usepackage[11pt]{moresize}
+\usepackage{setspace}
+\usepackage{fontspec}
+\usepackage[inline]{enumitem}
+\usepackage{array}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+\usepackage{anyfontsize}
+
+%%%% Set Margins
+\usepackage[margin=1cm, top=.75cm]{geometry}
+
+%%%% Set Fonts
+\setmainfont[
+BoldFont=SourceSansPro-Semibold.otf, %SourceSansPro-Bold.otf
+ItalicFont=SourceSansPro-RegularIt.otf
+]{SourceSansPro-Regular.otf}
+\setsansfont{SourceSansPro-Semibold.otf}
+
+%%%% Set Page
+\pagestyle{fancy}
+\fancyhf{} 
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+%%%% Set URL Style
+\urlstyle{same}
+
+%%%% Set Indentation
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+%%%% Set Secondary Color
+\definecolor{UI_blue}{RGB}{128,0,128}
+
+%%%% Define New Commands
+\usepackage[style=nature, maxbibnames=3]{biblatex}
+\addbibresource{Publications.bib}
+
+%%%% Bold Name in Publications
+\renewcommand*{\mkbibnamegiven}[1]{%
+\ifitemannotation{highlight}
+{\textbf{#1}}
+{#1}}
+
+\renewcommand*{\mkbibnamefamily}[1]{%
+\ifitemannotation{highlight}
+{\textbf{#1}}
+{#1}}
+
+%%%% Set Sections formatting
+\titleformat{\section}{
+\color{UI_blue} \scshape \raggedright \large 
+}{}{0em}{}[\vspace{-10pt} \hrulefill \vspace{-6pt}]
+
+%%%% Set Subtext Formatting
+\newcommand{\subtext}[1]{
+#1\par\vspace{-0.2cm}}
+
+% \newcommand{\subtextit}[1]{\vspace{0.15cm}
+% \textit{ #1 \vspace{-0.2cm}} }
+
+%%%% Set Item Spacing
+\setlist[itemize]{align=parleft,left=0pt..1em}
+
+%%%% New Itemize "Zitemize" Formatting - tighter spacing than itemize
+\newenvironment{zitemize}{
+\begin{itemize}\itemsep0pt \parskip0pt \parsep1pt}
+{\end{itemize}\vspace{-0.5cm}}
+
+
+%%%% Define Skills Bold Formatting
+\newcommand{\hskills}[1]{
+\textbf{\bfseries #1} }
+
+%%%% Set Subsection formatting
+\titleformat{\subsection}{\vspace{-0.1cm} 
+\bfseries \fontsize{11pt}{2cm}}{}{0em}{}[\vspace{-0.2cm}]
+
+%%%%%%% --------------------------------------------------------------------------------------
+%%%%%%% --------------------------------------------------------------------------------------
+%%%%%%%  END OF "DO NOT TOUCH" REGION
+%%%%%%% --------------------------------------------------------------------------------------
+%%%%%%% --------------------------------------------------------------------------------------
+
+\begin{document}
+
+%%%%%%% --------------------------------------------------------------------------------------
+%%%%%%%  HEADER
+%%%%%%% --------------------------------------------------------------------------------------
+\begin{center}
+
+    \begin{minipage}[b]{1.0\textwidth}
+            \centering
+            {\HUGE Manuel Diaz} \\ %
+            \vspace{0.1cm}
+            
+            {\Large{manueldiazdev@gmail.com | (707)620-3136 | linkedin.com/in/manuel-diaz-dev/}} \\
+            % {\Large{email@email.com | (000)000-0000 | linkedin.com/in/manuel-diaz-dev/}} \\
+    \end{minipage}%
+    
+\vspace{-0.15cm} 
+\end{center}
+
+
+%%%%%%% --------------------------------------------------------------------------------------
+%%%%%%%  EDUCATION
+%%%%%%% --------------------------------------------------------------------------------------
+% \vspace{-0.30cm}
+% \section{Education}
+% % \subsection*{Master of Science, ABC, {\normalsize \normalfont University of the North, GPA: x.xx/4.00} \hfill Mon yyyy --- Mon yyyy} 
+% % \vspace{0.1cm}
+% \subsection*{California State University, Sacramento \hfill Sacramento, CA}
+% \subtext{Bachelor of Science in Computer Engineering \hfill May 2023}
+% \vspace{0.2cm}
+% \subtext{GPA: 3.7 (Dean's Honor List)}
+% \vspace{0.1cm}
+
+%%%%%%% --------------------------------------------------------------------------------------
+%%%%%%%  SKILLS
+%%%%%%% --------------------------------------------------------------------------------------
+\vspace{-0.15cm}
+\section{Technical Skills}
+\begin{tabular}{p{11em} p{1em} p{43em}}
+% \hskills{Languages }&  &  C, Java, Python 3, JavaScript, HTML/CSS, YAML\\
+% \hskills{Languages }&  &  C/C++/C\#,  Java, Python 3, JavaScript, HTML/CSS, YAML\\
+\hskills{Languages }&  &  Java/Kotlin, JavaScript/TypeScript, YAML, HTML/CSS\\
+% \hskills{Languages }&  &  C/C++, Java, Python 3, YAML\\
+% \hskills{Languages }&  &  C/C++/C#, Java, YAML\\
+\hskills{Frameworks/Libraries} &  & Android, Node, React, React Native, Express.js\\
+\hskills{Tools} &  & AWS, Docker, CI/CD\\
+% \hskills{Relevant coursework }&  &  Data Structures and Algorithms, Discrete Structures, Computer Software Engineering\\
+\end{tabular}
+\vspace{-0.3cm}
+
+
+%%%%%%% --------------------------------------------------------------------------------------
+%%%%%%%  WORK EXPERIENCE
+%%%%%%% --------------------------------------------------------------------------------------
+\section{Experience}
+
+%%% ----- Best way to write items (Credit - ResumePuppy.com)
+        % \item Developed AngularJS microservice to automate parsing of ~300 emails/day for efficient service request categorization using Linux MBox & Perl scripts; reduced manual re-allocation by 87%.
+        % \item Led the development, build and bring-up execution of Lyft’s first functional AV platform from start to finish; established fleet-grade product reliability over 5 months.
+        % \item Enhanced user experience by fine-tuning stored procedures & SQL queries for efficient data retrieval from ~4M records accessed by 5000+ users worldwide.
+        % \item Built a custom menu single handedly using HTML5, CSS3, XML and JSP and improved the performance of existing application by tuning the PL/SQL scripts by 20\% and reduced on-migration time.
+        
+
+
+% ROLES
+
+% \subsection*{Buzly Inc. \hfill Sacramento, CA} 
+% \subtext{Co-Founder \hfill February 2022 - March 2023} 
+%     \begin{zitemize}
+%         \item Developed a React Native mobile application available on both the App Store and Google Play Store, accumulating over \textbf{2,000} downloads and maintaining a user base of approximately \textbf{1,000} monthly active users.
+%         \item Led agile methodologies while collaborating closely with a team of five offshore members to accelerate mobile development
+%         \item Designed a dashboard using ReactJS and Springboot, enabling our customers to interact with the mobile application
+%         \item Deployed API service within AWS EKS and Digital Ocean, and implemented Slack notification integration
+%     \end{zitemize}
+\subsection*{Digilock\hfill San Francisco, CA} 
+\subtext{Computer Engineer \hfill July 2023 - Current} 
+    \begin{zitemize}
+        \item Lead developer of an Android IoT relied by \textbf{50 percent} of the company's customer base
+        \item Leverage AWS to enable observability for IoT devices deployed on the field
+        \item Proposed and implemented a kiosk solution that generated over 6 figures in revenue for the company.
+        % \item Integrated remote over-the-air updates for Microchip based Internet of Things (IoT) devices for real time updates
+        \item Developed native Android modules to integrate into existing React Native applications
+        \item Facilitated CI/CD and unit testing for the company's customer facing monolith server
+        \item Established communication protocols to allow clear communication between both the firmware and server team
+
+
+        
+    
+    \end{zitemize}
+
+\subsection*{Nordstrom Inc. \hfill Seattle, WA} 
+\subtext{Software Engineer Intern \hfill June 2021 - August 2021 \& June 2022 - August 2022} 
+    \begin{zitemize}
+        \item Achieved a reduction in anomaly discovery time, streamlining the process from \textbf{three days} to \textbf{one hour}
+         \item Utilized React and Springboot to create an application that seamlessly transmits generated mock data to a Kafka cluster, which is utilized as a tool to stress test deployed pipelines
+        \item Designed and implemented reports using New Relic to proactively identify data anomalies, triggering real-time alerts to Slack and PagerDuty for prompt resolution
+        \item Implemented several algorithms that generate and validate records based on the Avro schema provided by the user
+        \item Containerized the application using Docker and integrated a CI/CD pipeline from GitLab to Nordstrom's JFrog container registry
+
+
+        
+    
+    \end{zitemize}
+
+
+
+\subsection*{Keysight Technologies \hfill Colorado Springs, CO} 
+\subtext{Software Engineer Intern \hfill December 2021 - May 2022}
+    \begin{zitemize}
+        \item Iteratively improved a client-facing containerized Django application, which provisioned Windows servers for internal engineering developments
+        \item Automated features to the provisioning process in Ansible, which had a reduction of time by \textbf{40 percent}
+        \item Initiated a Proof of Concept (POC) for a cloud resource management solution, leading the efforts in defining Key Performance Indicators (KPIs) to measure and quantify the success of the project
+        \item Facilitated daily scrum meetings with a team of two engineering interns, providing leadership and coordination for effective collaboration and progress tracking
+    
+    \end{zitemize}
+
+
+%%%%%%% ----------------------------------- Role 1 ----------------------------------- %%%%%%%
+\subsection*{Sacramento Municipal Utility District (SMUD) \hfill Sacramento, CA} 
+\subtext{STEM Student Intern - Junior Business Analysts \hfill September 2021 - January 2022} 
+    \begin{zitemize}
+        % \item Coordinate with a team of 3 to organize promising opportunities that promote growth within the company
+        \item Conducted comprehensive analysis to identify potential revenue, innovation, operational excellence, and zero-emission opportunities within the company, focusing on initiatives with a revenue potential of \textbf{\$3 million} or more
+        \item Facilitated conversations among directors and managers to refine the details of opportunities and risk management strategies
+        \item Generated comprehensive reports and interactive dashboards utilizing the data collected on the ServiceNow platform
+        
+    
+    \end{zitemize}
+
+%%%%%%% ----------------------------------- Role 2 ----------------------------------- %%%%%%%
+% \subsection*{Nordstrom Inc.\hfill Seattle, WA} 
+% \subtext{Software Engineer Intern \hfill June 2021 - August 2021} 
+%     \begin{zitemize}
+%         \item Utilized ReactJS and Springboot to create a robust application that seamlessly transmits generated mock data to a NoSQL database using Apache Kafka, which simulated \textbf{millions} of records being sent to a cluster
+%         \item Developed a backend service using Springboot that handles the connection of clusters and brokers, facilitating the transmission of generated data to the assigned database through its API endpoints.
+%         \item Implemented a recursive algorithm that generates and validates records based on the Avro schema received. These records are set with randomly generated data based on configurations provided
+%         \item Containerized the application using Docker and seamlessly integrated a CI/CD pipeline from GitLab to Nordstrom's container registry
+%     \end{zitemize}
+
+%%%%%%% ----------------------------------- Role 3 ----------------------------------- %%%%%%%
+% \subsection*{Darryl Webb’s Audio Engineering Internship \hfill Santa Rosa, CA} 
+% \subtext{Audio Engineer Intern \hfill November 2016 – January 2018} 
+%     \begin{zitemize}
+%         \item Consulted clients and communicated on the vision of the product, collaborated with a maximum of 2 clients per month to create and finalize roughly 5 tracks, and met approximately twice a week per client
+%         \item Multiple software applications (FL Studio, Pro-Tools, and various virtual instruments and synthesizers) were used to synthesize sounds, mix and master tracks, and make audio edits to recordings, on Mac OS
+%         \item The basics of audio engineering were applied in the process such as audio flow, audio dynamics, and sound frequencies. Engineered various sounds on multiple virtual synthesizers. Applied compressors, limiters, and equalizers to various recording channels to achieve a mastered track
+%     \end{zitemize}
+    
+
+%%%%%%% ----------------------------------- Role 4 ----------------------------------- %%%%%%%
+% \subsection*{Butte County Office Of Education/Migrant Education \hfill Santa Rosa, CA} 
+% \subtext{IT/Office Assistant \hfill September 2015 - June 2017} 
+%     \begin{zitemize}
+%         \item Maintained, troubleshot, and configured: printers, computers, and tablets located all around the office
+%         \item Developed basic Microsoft Word and Excel skills through data entry and correcting documents.
+%     \end{zitemize}
+
+
+
+%%%%%%% --------------------------------------------------------------------------------------
+%%%%%%%  ACADEMIC PROJECTS
+%%%%%%% --------------------------------------------------------------------------------------
+
+\section{Projects} %% (Or "Research", select as appropriate)
+
+
+\subsection*{Buzly Inc. \hfill Sacramento, CA} 
+\subtext{Co-Founder/Software Engineer \hfill February 2022 - March 2023} 
+    \begin{zitemize}
+        \item Developed a React Native mobile application available on both the App Store and Google Play Store, accumulating over \textbf{20,000} downloads and maintaining a user base of approximately \textbf{10,000} monthly active users, which \textbf{generated +60k in revenue}
+        \item Implemented a dashboard using React, enabling our customers to interact with the mobile application
+        \item Led agile methodologies while collaborating closely with a team of five offshore members to accelerate mobile development
+        \item Deployed Node service within AWS EKS and Digital Ocean, and implemented Slack notification integration
+    \end{zitemize}
+
+
+\vspace{-0.30cm}
+\section{Education}
+% \subsection*{Master of Science, ABC, {\normalsize \normalfont University of the North, GPA: x.xx/4.00} \hfill Mon yyyy --- Mon yyyy} 
+% \vspace{0.1cm}
+\subsection*{California State University, Sacramento \hfill Sacramento, CA}
+% \subtext{Bachelor of Science in Computer Engineering \hfill May 2023}
+\subtext{Bachelor of Science in Computer Engineering }
+\vspace{0.2cm}
+% \subtext{GPA: 3.7 (Dean's Honor List)}
+\subtext{GPA: 3.7}
+\vspace{0.1cm}
+% \subsection*{Smart Locker (Senior Project) \hfill Sacramento, CA} 
+% \subtext{Team Lead \hfill August 2022 - May 2023}
+%     \begin{zitemize}
+%         \item Repurposed an analog locking mechanism with a custom printed integrated circuit on a locker
+%         \item Architected cloud infrastructure on GCP and utilized serverless functions to handle 90\% of the project\'s business logic
+%         \item Programmed micro controllers in C and master node in python
+%         \item Utilized UART protocol to serialize data from the micro controller to the master node, which was sent to the cloud
+%         \item Connected a web app to allow the end-user to interact with the locker via a QR Scanner
+%     \end{zitemize}
+
+
+
+%%% ----- Best way to write items (Credit - FAANGPath)
+        % \item Achieved X\% growth for XYZ using A, B, and C skills.
+        % \item Led XYZ which led to X\% of improvement in ABC
+        % \item Developed XYZ that did A, B, and C using X, Y, and Z. 
+% \subsection*{Eagle View Game {\normalsize\normalfont [Online Multiplier Video Game]}
+% \hfill September 2021 - December 2021} 
+%     \begin{zitemize}
+%         \item Collaborated in a team of 8, where we developed an online multiplayer game following Scrum methodology.
+%         \item Lead the team as a Scrum master by discussing backlog items, initialized sprints, and facilitated team communication.
+%         \item Implemented design pattern's such as factory patterns, and singleton patterns through Object Oriented Programming
+%     \end{zitemize}
+
+
+
+%%%%%%% ----------------------------------- Role 1 ----------------------------------- %%%%%%%
+% \subsection*{Capacitive Assistant {\normalsize\normalfont(Sac Hacks 2021 Winners) [Data Collecting IoT]}
+% \hfill February 2021} 
+%     \begin{zitemize}
+%         \item Collaborated in a team of 4, where we developed a circuit integrated to a raspberry pi which read human steps as an input with a homemade sensor using capacitive sensing principles 
+%         \item Deployed an Apache server, locally, on a raspberry pi and developed a website using the CGI framework which allows any smart device to connect to the website and displays live data
+%         % \item Modified scripts to collect data in a local database which is then displayed on the server.
+%         \item Python 2.7, HTML, UNIX, Raspberry Pi
+%     \end{zitemize}
+
+
+%%%%%%% ----------------------------------- Role 2 ----------------------------------- %%%%%%%
+% \subsection*{Loan Tracker {\normalsize\normalfont [Data Entry Application]} \hfill July 2020 - September  2020} 
+%     \begin{zitemize}
+%         \item A database entry application that allows the user to input a loan or payment value in a text box and calculates the values accordingly. This data is stored locally in a directory chosen by the user.
+%         \item Designed the UI with the Tkinter library
+%         \item Python 3, Tkinter
+%     \end{zitemize}
+
+
+
+
+% \section{Extra Curricular}
+% \subsection*{Society of Hispanic Engineers (SHPE)}
+% \subtext{Director of Professional Development \hfill May 2021 - Current}
+% \vspace{0.15cm}
+% \subtext{Member \hfill September 2020 - Present}
+
+
+
+
+
+
+
+%%%%%%% --------------------------------------------------------------------------------------
+%%%%%%%  VOLUNTEER EXPERIENCE
+%%%%%%% --------------------------------------------------------------------------------------
+% \section{Volunteer (or LEADERSHIP) Experience}
+
+%%%%%%% ----------------------------------- Role 6 ----------------------------------- %%%%%%%
+% \subsection*{Position, Org \hfill Mon yyyy --- Mon yyyy} 
+%     \begin{zitemize}
+            % \item \textbf{Short Project Title.} {Build a project that does something and had quantified success using A, B, and C.}
+%     \end{zitemize}
+
+
+%%%%%%% ----------------------------------- Role 6 ----------------------------------- %%%%%%%
+% \subsection*{Position, Org \hfill Mon yyyy --- Mon yyyy} 
+%     \begin{zitemize}
+            % \item \textbf{Short Project Title.} {Build a project that does something and had quantified success using A, B, and C.}
+%     \end{zitemize}
+
+
+
+% %%%%%%% --------------------------------------------------------------------------------------
+% %%%%%%%  PUBLICATIONS
+% %%%%%%% --------------------------------------------------------------------------------------
+% \section{Publications} 
+% \renewcommand\refname{\vskip -1.5em}
+% \nocite{*}
+% \printbibliography[heading=none]
+% \vspace{-0.4cm}
+
+
+
+% %%%%%%% --------------------------------------------------------------------------------------
+% %%%%%%%  AWARDS & HONORS
+% %%%%%%% --------------------------------------------------------------------------------------
+% \section{Awards \& Honors}
+% \vspace{-0.2cm}
+% \begin{tabular}[t]{ p{4em} p{50em}}
+% \hskills{yyyy} & Award 1 (\hskills{\$xxxxxx}); Award 2 (\hskills{\$xxxxxx}); Award 3 (\hskills{\$xxxxxx}); Award 4 (\hskills{\$xxxxxx}); Award 5 (\hskills{\$xxxxxx}) \\ % 
+% \hskills{yyyy} & Award 6 (\hskills{\$xxxxxx}); Award 7 (\hskills{\$xxxxxx}); Award 8 (\hskills{\$xxxxxx}) \\
+% \end{tabular} 
+
+%%%%%%% ---------------------------- END DOC HERE ---------------------------- %%%%%%% 
+\end{document}
