@@ -1,16 +1,16 @@
 # Fdb version 4
-["biber resume"] 1758338838.11411 "resume.bcf" "resume.bbl" "resume" 1758339604.94573 0
-  "resume.bcf" 1758339604.66589 107598 bf28bb947ad40ebd89794fcb7a667d7d "xelatex"
+["biber resume"] 1758338838.11411 "resume.bcf" "resume.bbl" "resume" 1758430281.86352 0
+  "resume.bcf" 1758430281.59901 107598 bf28bb947ad40ebd89794fcb7a667d7d "xelatex"
   (generated)
   "resume.bbl"
   "resume.blg"
   (rewritten before read)
-["xdvipdfmx"] 1758339604.70971 "resume.xdv" "resume.pdf" "resume" 1758339604.9465 0
-  "resume.xdv" 1758339604.66689 40336 c2519133e30f89080078fd032cfee615 "xelatex"
+["xdvipdfmx"] 1758430281.63566 "resume.xdv" "resume.pdf" "resume" 1758430281.8641 0
+  "resume.xdv" 1758430281.59972 41340 ed35e463d72ad373b4883d4d08228b7e "xelatex"
   (generated)
   "resume.pdf"
   (rewritten before read)
-["xelatex"] 1758339603.96976 "resume.tex" "resume.xdv" "resume" 1758339604.94578 0
+["xelatex"] 1758430280.90789 "resume.tex" "resume.xdv" "resume" 1758430281.86355 0
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/latex-fonts/lasy10.tfm" 1136768653 520 82a3d37183f34b6eb363a161dfc002c2 ""
@@ -99,11 +99,11 @@
   "/usr/local/texlive/2025/texmf-dist/web2c/texmf.cnf" 1739380943 42148 61becc7c670cd061bb319c643c27fdd4 ""
   "/usr/local/texlive/2025/texmf-var/web2c/xetex/xelatex.fmt" 1741450550 5639796 b6822fbf027c6598cec2e241e0925725 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "resume.aux" 1758339604.66473 676 33e1ebd5709e17350fd04ad109c03187 "xelatex"
+  "resume.aux" 1758430281.59445 676 33e1ebd5709e17350fd04ad109c03187 "xelatex"
   "resume.bbl" 1758338847.99157 466 76d65a242ec496c9b4361af646ff12cb "biber resume"
-  "resume.out" 1758339604.66514 390 c20df0732a26e929d2e5c5462d70cbf8 "xelatex"
-  "resume.run.xml" 1758339604.6668 2457 93d246078d72c40f147af26368b5373c "xelatex"
-  "resume.tex" 1758339446.12122 21608 f5b43394e9629d3817c7fba82c7ccc08 ""
+  "resume.out" 1758430281.59812 390 c20df0732a26e929d2e5c5462d70cbf8 "xelatex"
+  "resume.run.xml" 1758430281.59948 2457 93d246078d72c40f147af26368b5373c "xelatex"
+  "resume.tex" 1758430279.40828 21812 84962780b9229e172cd09722e3feea3b ""
   (generated)
   "resume.aux"
   "resume.bcf"

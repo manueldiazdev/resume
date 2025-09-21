@@ -177,7 +177,7 @@ ItalicFont=SourceSansPro-RegularIt.otf
 \begin{tabular}{p{11em} p{1em} p{43em}}
 % \hskills{Languages }&  &  C, Java, Python 3, JavaScript, HTML/CSS, YAML\\
 % \hskills{Languages }&  &  C/C++/C\#,  Java, Python 3, JavaScript, HTML/CSS, YAML\\
-\hskills{Languages }&  &  Java/Kotlin, JavaScript, YAML, HTML/CSS\\
+\hskills{Languages }&  &  Java/Kotlin, JavaScript/TypeScript, YAML, HTML/CSS\\
 % \hskills{Languages }&  &  C/C++, Java, Python 3, YAML\\
 % \hskills{Languages }&  &  C/C++/C#, Java, YAML\\
 \hskills{Frameworks/Libraries} &  & Android, Node, React, React Native, Express.js\\
@@ -213,13 +213,15 @@ ItalicFont=SourceSansPro-RegularIt.otf
 \subsection*{Digilock\hfill San Francisco, CA} 
 \subtext{Computer Engineer \hfill July 2023 - Current} 
     \begin{zitemize}
-        \item Lead developer of the company’s main network lock component, an Android IoT device relied upon by the customer base
-        \item Leverage AWS to enable observability for IoT devices deployed on the field (currently at 1000+ active devices)
-        \item Proposed and implemented a kiosk solution with over 100 active deployments
+        \item Lead developer for the company’s Android IoT gateway, a core device deployed across customer sites
+        \item Proposed, built, and launched an Android React Native kiosk solution rolled out across 100+ active sites
+        \item Developed native Android modules to integrate FTDI USB peripherals into React Native applications
+        \item Delivered BLE native modules for React Native, enabling Android/iOS connectivity with smart locks
+        \item Leveraged AWS CloudWatch to enable monitoring for IoT devices deployed on the field (currently at 1000+ active devices)
+        \item Documented data exchange protocols in Confluence, improving cross-team alignment and reducing integration delays
         % \item Integrated remote over-the-air updates for Microchip based Internet of Things (IoT) devices for real time updates
-        \item Developed native Android modules to integrate into existing React Native applications
-        \item Facilitated CI/CD and unit testing for the company's customer facing monolith server
-        \item Established communication protocols to allow clear communication between both the firmware and server team
+
+        % \item Facilitated CI/CD and unit testing for the company's customer facing monolith server
 
 
         
@@ -232,7 +234,7 @@ ItalicFont=SourceSansPro-RegularIt.otf
         \item Achieved a reduction in anomaly discovery time, streamlining the process from \textbf{three days} to \textbf{one hour}
          \item Utilized React and Springboot to create an application that seamlessly transmits generated mock data to a Kafka cluster, which is utilized as a tool to stress test deployed pipelines
         \item Designed and implemented reports using New Relic to proactively identify data anomalies, triggering real-time alerts to Slack and PagerDuty for prompt resolution
-        \item Implemented several algorithms that generate and validate records based on the Avro schema provided by the user
+        \item Implemented recursive algorithms that generate and validate records based on the Avro schema provided by the user
         \item Containerized the application using Docker and integrated a CI/CD pipeline from GitLab to Nordstrom's JFrog container registry
 
 
